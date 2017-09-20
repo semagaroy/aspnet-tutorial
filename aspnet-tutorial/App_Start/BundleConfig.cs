@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace aspnet_tutorial
+namespace MvcMovie
 {
     public class BundleConfig
     {

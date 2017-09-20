@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Entity;
 
-namespace aspnet_tutorial.Models
+namespace MvcMovie.Models
 {
     public class Movie
     {

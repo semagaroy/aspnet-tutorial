@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace aspnet_tutorial
+namespace MvcMovie
 {
     public class RouteConfig
     {

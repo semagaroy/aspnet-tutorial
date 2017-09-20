@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace aspnet_tutorial
+namespace MvcMovie
 {
     public class FilterConfig
     {

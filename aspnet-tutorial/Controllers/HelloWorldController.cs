@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace aspnet_tutorial.Controllers
+namespace MvcMovie.Controllers
 {
     public class HelloWorldController : Controller
     {
