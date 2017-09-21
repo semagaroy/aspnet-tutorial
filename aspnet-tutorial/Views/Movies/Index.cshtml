@@ -11,13 +11,14 @@
     @using (Html.BeginForm())
     {
     <p>
-        Genre: @Html.DropDownList("All")
+        Genre: @Html.DropDownList("movieGenre")
         Title: @Html.TextBox("SearchString") <br />
         <input type="submit" value="Filter" />
     </p>
     }
+
     
-</p>
+
 <table class="table">
     <tr>
         <th>

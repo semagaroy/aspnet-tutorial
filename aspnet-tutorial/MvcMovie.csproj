@@ -160,14 +160,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709211746236_InitialCreate.cs" />
+    <Compile Include="Migrations\201709211746236_InitialCreate.Designer.cs">
+      <DependentUpon>201709211746236_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709212156064_DataAnnotations.cs" />
+    <Compile Include="Migrations\201709212156064_DataAnnotations.Designer.cs">
+      <DependentUpon>201709212156064_DataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Movie.mdf" />
-    <Content Include="App_Data\Movie_log.ldf">
-      <DependentUpon>Movie.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -214,7 +219,9 @@
     <Content Include="Views\Movies\Edit.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
@@ -227,6 +234,14 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709211746236_InitialCreate.resx">
+      <DependentUpon>201709211746236_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709212156064_DataAnnotations.resx">
+      <DependentUpon>201709212156064_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
